@@ -5,12 +5,20 @@ import './App.css'
 import Task from './Task.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [tasks, setTasks] = useState([
+      {name: 'cs61b proj', status: false, dueDate: "1/1/26"},
+      {name: 'calc hw', status: false, dueDate: "1/1/26"}
+  ]);
+
 
   return (
     <>
     <h1>Hello this is a To-Do List</h1>
-    <button> </button>
+    {tasks.map((task) => (<Task
+      name = {task.name}
+      status = {task.status}
+      dueDate = {task.dueDate} />
+    ))}
     </>
   )
 }
