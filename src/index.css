@@ -2,3 +2,8 @@
   text-align: center;
   font-family: monospace;
 }
+
+nav {
+  display: flex;
+  gap: 1rem;
+}

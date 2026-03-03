@@ -1,8 +1,10 @@
+import "../index.css";
+
 function About() {
 
   return (
     <>
-    <div className='todo'>
+    <div>
         <h1>About</h1>
     </div>
     </>
